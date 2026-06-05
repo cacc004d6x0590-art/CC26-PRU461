@@ -1,5 +1,5 @@
 1. Clone repository
-   git clone https://github.com/[username-tim]/CC26-PRU461
+   git clone (https://github.com/cacc004d6x0590-art/CC26-PRU461.git)
    cd CC26-PRU461
 
 2. Siapkan dataset
