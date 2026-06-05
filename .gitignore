@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# TensorFlow
+*.h5
+*.pb
+
+# Environment
+.env
+.env.local
+
+# Build
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
