@@ -1,9 +1,12 @@
 import { Award, RotateCcw } from "lucide-react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import useTitlePage from "../../hooks/useTitlePage";
 
 export default function UserResultPage() {
   const location = useLocation();
   const navigate = useNavigate();
+
+  useTitlePage("Hasil Rekomendasi Jurusan");
 
   const savedResult = sessionStorage.getItem("test_result");
 
@@ -11,12 +14,12 @@ export default function UserResultPage() {
     location.state || (savedResult ? JSON.parse(savedResult) : null);
 
   if (!result) {
-    return <Navigate to="/user/test" replace />;
+    return <Navigate to="/test" replace />;
   }
 
   const handleRetakeTest = () => {
     sessionStorage.removeItem("test_result");
-    navigate("/user/test");
+    navigate("/test");
   };
 
   return (
@@ -42,7 +45,7 @@ export default function UserResultPage() {
       <section className="flex justify-center items-center mt-8">
         <button
           onClick={handleRetakeTest}
-          className="flex justify-center items-center gap-2 px-8 py-3 bg-transparent backdrop-blur-sm border-2 border-black text-black rounded-xl font-semibold hover:bg-white/30 transition-all"
+          className="cursor-pointer flex justify-center items-center gap-2 px-8 py-3 bg-transparent backdrop-blur-sm border-2 border-black text-black rounded-xl font-semibold hover:bg-white/30 transition-all"
         >
           <RotateCcw size={20} />
           Tes Ulang

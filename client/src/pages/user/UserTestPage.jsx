@@ -4,6 +4,7 @@ import TestNavigation from "../../components/test/TestNavigation";
 import { steps } from "../../data/user/test/testData";
 import useTestForm from "../../hooks/useTestForm";
 import { useNavigate } from "react-router-dom";
+import useTitlePage from "../../hooks/useTitlePage";
 
 export default function UserTestPage() {
   const navigate = useNavigate();
@@ -23,6 +24,8 @@ export default function UserTestPage() {
     isStepComplete,
   } = useTestForm();
 
+  useTitlePage("Tes Rekomendasi Jurusan");
+
   const onNext = async () => {
     if (loading) return;
 
@@ -32,14 +35,12 @@ export default function UserTestPage() {
       try {
         const result = await submitTest();
 
-        console.log("Backend Response:", result);
-
         sessionStorage.setItem(
           "test_result",
           JSON.stringify(result.prediction),
         );
 
-        navigate("/user/result", {
+        navigate("/result", {
           state: result.prediction,
         });
       } catch (error) {

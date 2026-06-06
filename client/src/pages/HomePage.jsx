@@ -41,16 +41,11 @@ export default function HomePage() {
   const steps = [
     {
       number: "01",
-      title: "Daftar Akun",
-      description: "Buat akun gratis dalam hitungan detik",
-    },
-    {
-      number: "02",
       title: "Ikuti Tes",
       description: "Kerjakan tes minat dan kemampuan",
     },
     {
-      number: "03",
+      number: "02",
       title: "Dapatkan Rekomendasi",
       description: "Terima rekomendasi jurusan terbaik untukmu",
     },
@@ -122,9 +117,9 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-25 pb-20 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
                 <Sparkles className="w-4 h-4 text-blue-600" />
@@ -133,7 +128,7 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <h1 className="text-5xl sm:text-6xl font-bold leading-tight">
+              <h1 className="lg:text-5xl text-4xl font-bold leading-tight">
                 Temukan Jurusan Kuliah yang{" "}
                 <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Sesuai dengan Minat dan Kemampuanmu
@@ -146,34 +141,35 @@ export default function HomePage() {
                 kemampuan, dan prospek karier masa depan.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col lg:flex-row gap-4">
                 <Link
-                  to="/user/test"
+                  to="/test"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:shadow-2xl hover:shadow-blue-500/30 transition-all text-lg font-semibold"
                 >
                   Mulai Tes Sekarang
                   <ArrowRight className="w-5 h-5" />
                 </Link>
-                <button className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 rounded-xl hover:border-blue-300 hover:shadow-lg transition-all text-lg font-semibold">
-                  Lihat Demo
-                </button>
               </div>
 
-              <div className="flex items-center gap-8 pt-4">
+              <div className="flex items-start lg:items-center gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-slate-800">
+                  <div className="sm:text-2xl lg:text-3xl font-bold text-slate-800">
                     10,000+
                   </div>
                   <div className="text-sm text-slate-600">Siswa Terdaftar</div>
                 </div>
                 <div className="w-px h-12 bg-slate-300"></div>
                 <div>
-                  <div className="text-3xl font-bold text-slate-800">95%</div>
+                  <div className="sm:text-2xl lg:text-3xl font-bold text-slate-800">
+                    95%
+                  </div>
                   <div className="text-sm text-slate-600">Akurasi AI</div>
                 </div>
                 <div className="w-px h-12 bg-slate-300"></div>
                 <div>
-                  <div className="text-3xl font-bold text-slate-800">50+</div>
+                  <div className="sm:text-2xl lg:text-3xl font-bold text-slate-800">
+                    50+
+                  </div>
                   <div className="text-sm text-slate-600">Jurusan</div>
                 </div>
               </div>

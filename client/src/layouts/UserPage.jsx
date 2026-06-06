@@ -4,7 +4,7 @@ import Header from "../components/headers/Header";
 export default function UserPage() {
   const locationPage = useLocation();
 
-  const resultPage = "/user/result" === locationPage.pathname;
+  const resultPage = "/result" === locationPage.pathname;
   return (
     <div className="relative min-h-screen overflow-x-hidden">
       <div className="fixed inset-0 -z-10 bg-linear-to-br from-slate-50 via-blue-50 to-purple-50" />

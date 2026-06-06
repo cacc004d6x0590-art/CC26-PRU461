@@ -86,8 +86,6 @@ export default function useTestForm() {
       setAnswers({});
       setCurrentStep(0);
 
-      console.log("Response Backend:", result);
-
       return result;
     } catch (error) {
       console.error(error);
