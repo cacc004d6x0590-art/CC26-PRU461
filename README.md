@@ -26,7 +26,7 @@
 
 6. Jalankan model
    Masuk folder /model, ikuti instruksi di Capstone_AI_Engineer1.ipynb
-   Unggah File yang dihasilkan data scientist
+   Unggah File yang dihasilkan data scientist, lalu
    Model siap diproses back end dalam folder (best _model.keras, feature medians, inference_metadata, label_mapping.json)
    
 8. Jalankan website
