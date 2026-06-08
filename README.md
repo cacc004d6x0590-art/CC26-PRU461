@@ -25,9 +25,11 @@
    minat_vs_nilai
 
 6. Jalankan model
-   Masuk folder /model, ikuti instruksi di model/README.md
-
-7. Jalankan website
+   Masuk folder /model, ikuti instruksi di Capstone_AI_Engineer1.ipynb
+   Unggah File yang dihasilkan data scientist
+   Model siap diproses back end dalam folder (best _model.keras, feature medians, inference_metadata, label_mapping.json)
+   
+8. Jalankan website
    Masuk folder /webapp
    pip install -r requirements.txt
    streamlit run app.py
